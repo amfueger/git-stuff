@@ -66,9 +66,15 @@ function three() {
 console.log(three())
 
 //Beginning homework
+// Problem one
 
-for (let i = 1; i < 20; i++ {
+for (let i = 1; i <= 20; i++) {
   console.log(i);
-  
-
 }
+
+// problem two
+
+for (let i = 0; i <= 200; i+=2) {
+  console.log(i);
+}
+
