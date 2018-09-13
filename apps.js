@@ -195,3 +195,17 @@ console.log(`Today Kristyn is wearing ${kristynsCloset[1]}, a ${kristynsCloset[3
 console.log(`Today Thom is wearing ${thomsCloset[0][0]}, ${thomsCloset[1][0]}, and ${thomsCloset[2][2]}`);
 console.log(`Today Thom is wearing ${thomsCloset[0][2]}, ${thomsCloset[1][1]}, and ${thomsCloset[2][2]}`);
 console.log(`Today Thom is wearing ${thomsCloset[0][3]}, ${thomsCloset[1][1]}, and ${thomsCloset[2][2]}`);
+
+//Dirty Laundry
+
+//Loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in array
+
+for (let i = 0; i < kristynsCloset.length; i++) {
+  console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
+}
+
+//Thom's inventory, log the arrays, not the elements
+//I don't understand how to eliminate the listing of the elements without turning the array into the clothing items being properties (grey shirt) of an object (shirts)
+for (let i = 0; i < thomsCloset.length; i++) {
+  console.log(thomsCloset[i])
+}
