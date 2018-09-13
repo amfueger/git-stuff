@@ -97,6 +97,59 @@ for (let i = 0; i <= 20; i++) {
 }
 
 
+//Write a javascript application that logs all numbers from 1 - 100.
+for (let i = 1; i <= 100; i++) {
+  // If a number is divisible by 3 log "Fizz" instead of the number.
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log('FizzBuzz')
+  }
+  else if (i % 3 === 0) {
+    console.log('Fizz')
+  }
+  // If a number is divisible by 5 log "Buzz" instead of the number.
+  else if (i % 5 === 0) {
+    console.log('Buzz')
+  }
+// If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
+
+  else {
+    console.log(i);
+  }
+}
+
+const shahzad = ["Shahzad", 1000, "Austin"];
+let jim = ["Jim", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const daniel = ["Daniel", 186, "Dallas"];
+const ryan = ["Ryan", 65, "Denver"];
+
+//1. Replace Shahzad with Gameboy
+shahzad[0] = "GameBoy";
+//2. Age Daniel
+daniel[1]++;
+//3. Ryan hometown from denver to gotham city
+ryan[2] = "Gotham City";
+//4. Reuben left Durham for chicago. Remove Durham, then add chicago
+reuben.pop();
+reuben.push("Chicago");
+//5. Remove All cities from array.
+//slice takes a subset of the first array, which makes it another array that contains what's in slice, which happens to contain the same things in the first array. In this way we can concatenate another array onto the end. We've taken the elements of Jim, up to and not including "All Cities". Otherwise it would be Jim.concat(["Chicago", "Madison", "Tokyo"]). Concat is a property of Jim array now. I'm reassigning the array again to jim, because the slice made it a new array. 
+jim = jim.slice(0, 2).concat(["Chicago", "Madison", "Tokyo"]);
+//Yell at the Ninja Turtles
+
+// Create array with mebers of turtles
+
+const turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+// use a for loop to call .toUpperCase()
+
+for (let i = 0; i < turtles.length; i++) {
+  console.log(turtles[i].toUpperCase())
+}
+
+
+
+
 
 
 
