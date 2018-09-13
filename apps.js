@@ -64,3 +64,11 @@ function three() {
   return 3
 }
 console.log(three())
+
+//Beginning homework
+
+for (let i = 1; i < 20; i++ {
+  console.log(i);
+  
+
+}
