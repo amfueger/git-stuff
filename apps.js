@@ -148,9 +148,50 @@ for (let i = 0; i < turtles.length; i++) {
 }
 
 
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+// Move kristin's shoe to thom's accessory drawer. Slice generates a new array, splice mutates it. 
+
+let kristynsShoe = kristynsCloset.shift();
+// put it in thom's accessories array
+thomsCloset[2].push(kristynsShoe);
+
+//make three separate outfits for each person, I hope I am doing this right, because I am not sure what code I am supposed to modify?
+
+console.log(`Today Kristyn is wearing ${kristynsCloset[1]}, a ${kristynsCloset[3]}, and a ${kristynsCloset[5]}`);
+console.log(`Today Kristyn is wearing ${kristynsCloset[1]}, a ${kristynsCloset[3]}, and a ${kristynsCloset[5]}`);
+console.log(`Today Kristyn is wearing ${kristynsCloset[1]}, a ${kristynsCloset[3]}, and a ${kristynsCloset[5]}`);
 
 
-
-
-
-
+console.log(`Today Thom is wearing ${thomsCloset[0][0]}, ${thomsCloset[1][0]}, and ${thomsCloset[2][2]}`);
+console.log(`Today Thom is wearing ${thomsCloset[0][2]}, ${thomsCloset[1][1]}, and ${thomsCloset[2][2]}`);
+console.log(`Today Thom is wearing ${thomsCloset[0][3]}, ${thomsCloset[1][1]}, and ${thomsCloset[2][2]}`);
