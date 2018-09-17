@@ -209,3 +209,19 @@ for (let i = 0; i < kristynsCloset.length; i++) {
 for (let i = 0; i < thomsCloset.length; i++) {
   console.log(thomsCloset[i])
 }
+
+
+// Multiples of 3 and 5 
+//declaring variable to add number to, so it's not undefined or NaN. Making the array too to pass the numbers into.
+let arrayAdd = [];
+let sum = 0;
+
+for (let i = 1; i < 1000; i++) {
+  // multiples of 3 or 5
+  if (i % 3 === 0 || i % 5 === 0) {
+  arrayAdd[sum] = i;
+  sum++;
+  //The array gets the iteration number into it as defined by the if loop, which is equal to i, the iteration. 
+  }  
+}
+console.log(sum);
